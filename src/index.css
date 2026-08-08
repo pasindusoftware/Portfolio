@@ -3,6 +3,24 @@ html,body{font-family:'DM Sans',sans-serif}
 h1,h2,h3,h4,h5,h6{font-family:'PT Sans',sans-serif}
 body{transition:background-color .3s,color .3s}
 
+
+@keyframes gradient-wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .text-accent-animated {
+    background: linear-gradient(135deg, var(--accent-color, #3b82f6), #8b5cf6, var(--accent-color, #3b82f6));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-wave 4s ease infinite;
+    display: inline-block;
+  }
+
+
+
 /* noise overlay */
 body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
 background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E")}
