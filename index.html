@@ -77,8 +77,8 @@
 
       <div>
         <p class="reveal text-sm font-medium text-accent tracking-widest uppercase mb-4">Available for work</p>
-        <h1 class="reveal d1 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6">
-          Hi, I'm <span class="text-accent text-accent-animated">Pasindu</span>
+        <h1 class="reveal d1 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight text-zinc-900 dark:text-white mb-6 min-h-[2.2em] md:min-h-[2.2em]">
+          Hi, I'm <span id="typewriter" class="text-accent border-r-4 border-accent pr-1 animate-pulse inline-block"></span>
         </h1>
         <p class="reveal d2 text-lg md:text-xl text-zinc-500 dark:text-zinc-400 font-light leading-relaxed max-w-md mb-10">
           Independent <strong class="font-medium text-zinc-700 dark:text-zinc-300">Software Developer &amp; Frontend Developer</strong>. Delivering tailored desktop and web solutions with sleek interfaces and robust backends—from concept to deployment
@@ -371,6 +371,41 @@
 </footer>
 
 <script>
+
+const textArray = ["Pasindu      ", "a Full-Stack Dev", "a UI/UX Designer", "a Creator     "];
+  const typingDelay = 100;   
+  const erasingDelay = 50;   
+  const newTextDelay = 2000; 
+  let textArrayIndex = 0;
+  let charIndex = 0;
+
+  const typewriterElement = document.getElementById("typewriter");
+
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      typewriterElement.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, typingDelay);
+    } else {
+      setTimeout(erase, newTextDelay);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      typewriterElement.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, erasingDelay);
+    } else {
+      textArrayIndex = (textArrayIndex + 1) % textArray.length;
+      setTimeout(type, typingDelay + 300);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (textArray.length) setTimeout(type, newTextDelay);
+  });
+
   function app() {
     return {
       dark: false,

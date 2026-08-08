@@ -13,7 +13,7 @@ body{transition:background-color .3s,color .3s}
   .text-accent-animated {
     background: linear-gradient(135deg, var(--accent-color, #3b82f6), #8b5cf6, var(--accent-color, #3b82f6));
     background-size: 200% auto;
-    -webkit-background-clip: text;
+    
     -webkit-text-fill-color: transparent;
     animation: gradient-wave 4s ease infinite;
     display: inline-block;
