@@ -4,10 +4,10 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects — Pasindu</title>
-  <script src="/src/tailwindcss.js"></script>
-  <script defer src="/src/cdn.min.js"></script>
-  <link href="/src/fonts.css" rel="stylesheet"/>
-  <link href="/src/projects.css" rel="stylesheet"/>
+  <script src="src/tailwindcss.js"></script>
+  <script defer src="src/cdn.min.js"></script>
+  <link href="src/fonts.css" rel="stylesheet"/>
+  <link href="src/projects.css" rel="stylesheet"/>
   <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['PT Sans','sans-serif'],body:['DM Sans','sans-serif']},colors:{accent:'#FF6B2B','accent-light':'#FF8F5C'}}}}</script>
 </head>
 <body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-body antialiased">
@@ -149,10 +149,10 @@
         ],
 
         allProjects: [
-          { id:1,  title:'Job SYS',  category:'Desktop',      categoryLabel:'Desktop',         tags:['Java','Mysql','Cloud'],           year:'2026', desc:'This is a desktop application designed to streamline the workflow for a PC repair and service center. It provides tools for managing customer data, repair jobs, tracking job status, transferring jobs between branches, and generating reports/printouts.',    img:'/src/jobsys.png',  url:'https://github.com/pasindusoftware/JobSys' },
-          { id:2,  title:'E - Store',    category:'Web',   categoryLabel:'Web', tags:['HTML','CSS','JS'], year:'2024', desc:'A modern full-stack e-commerce platform designed for online retail. Features intuitive product browsing, interactive shopping cart management, secure checkout workflows, and an admin dashboard for inventory management.',                              img:'/src/estore.png', url:'https://github.com/pasindusoftware/E-Store' },
-          { id:3,  title:'Course Managemnt SYS', category:'Console',    categoryLabel:'Console',       tags:['Java','OOP'],                year:'2025', desc:'A console-based management system designed using Object-Oriented Programming (OOP) principles. Implements custom data structures and file handling/database operations to efficiently manage student profiles, course capacities, and prerequisite checks via a text interface.',                      img:'/src/couse.png', url:'https://github.com/pasindusoftware/Course-Enrollment-System' },
-          { id:4,  title:'Smart Fine System',    category:'Desktop',   categoryLabel:'Desktop', tags:['C#','MySQL'],         year:'2024', desc:'A modern desktop application built to streamline traffic fine management and penalty processing. Features an intuitive user interface, automated fine calculation, driver record tracking, and real-time payment status monitoring.',                                      img:'/src/finesys.png',  url:'' }
+          { id:1,  title:'Job SYS',  category:'Desktop',      categoryLabel:'Desktop',         tags:['Java','Mysql','Cloud'],           year:'2026', desc:'This is a desktop application designed to streamline the workflow for a PC repair and service center. It provides tools for managing customer data, repair jobs, tracking job status, transferring jobs between branches, and generating reports/printouts.',    img:'src/jobsys.png',  url:'https://github.com/pasindusoftware/JobSys' },
+          { id:2,  title:'E - Store',    category:'Web',   categoryLabel:'Web', tags:['HTML','CSS','JS'], year:'2024', desc:'A modern full-stack e-commerce platform designed for online retail. Features intuitive product browsing, interactive shopping cart management, secure checkout workflows, and an admin dashboard for inventory management.',                              img:'src/estore.png', url:'https://github.com/pasindusoftware/E-Store' },
+          { id:3,  title:'Course Managemnt SYS', category:'Console',    categoryLabel:'Console',       tags:['Java','OOP'],                year:'2025', desc:'A console-based management system designed using Object-Oriented Programming (OOP) principles. Implements custom data structures and file handling/database operations to efficiently manage student profiles, course capacities, and prerequisite checks via a text interface.',                      img:'src/couse.png', url:'https://github.com/pasindusoftware/Course-Enrollment-System' },
+          { id:4,  title:'Smart Fine System',    category:'Desktop',   categoryLabel:'Desktop', tags:['C#','MySQL'],         year:'2024', desc:'A modern desktop application built to streamline traffic fine management and penalty processing. Features an intuitive user interface, automated fine calculation, driver record tracking, and real-time payment status monitoring.',                                      img:'src/finesys.png',  url:'' }
         ],
 
         get visibleCount() {
