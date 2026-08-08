@@ -2,7 +2,7 @@
 
 A modern, responsive, and minimal portfolio website built to showcase my software engineering projects, technical skills, and professional services.
 
-Live Website: [Pasindu Tharuka Portfolio]()
+Live Website: [Pasindu Tharuka Portfolio](https://pasindusoftware.github.io/Portfolio/)
 
 ---
 
