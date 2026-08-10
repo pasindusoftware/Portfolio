@@ -20,6 +20,19 @@ body{transition:background-color .3s,color .3s}
   }
 
 
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6B2B;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  .download-btn:hover {
+    background-color: #ff6b2ba3;
+  }
+
 
 /* noise overlay */
 body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
